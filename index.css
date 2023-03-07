@@ -1,0 +1,173 @@
+/* CSS File for Information Page for wide screen*/
+
+
+p{
+    text-align: center;
+    
+}
+
+.ForYou{
+    outline: 5px black;
+    border-style:solid;
+    background-color: white;
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.Popular{
+    outline: 5px black;
+    border-style:solid;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.main-container{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: rgb(231, 209, 180);
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 34px;
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+}
+
+.paperrow{
+    width:100%;
+    display:flex;
+    flex-wrap: none;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.Paper1{
+    position: relative;
+  
+    display: inline-block;
+    width: 70px;
+    height: 200px;
+    background-color: grey;
+    flex-grow: 0.2;
+    
+}
+#p1{
+    height: 100%;
+    position: relative;
+}
+.Paper2{
+   
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 200px;
+    background-color: grey;
+    flex-grow: 0.2;
+}
+#p2{
+    height: 100%;
+    position: relative;
+}
+
+.Paper3{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 200px;
+    background-color: grey;
+    flex-grow: 0.2;
+}
+
+#p3{
+    height: 100%;
+    position: relative;
+}
+.Paper4{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 200px;
+    background-color: grey;
+    flex-grow: 0.2;
+}
+
+#p4{
+    height: 100%;
+    position: relative;
+}
+
+.Paper5{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 200px;
+    background-color: grey;
+    flex-grow: 0.2;
+}
+
+#p5{
+    height: 100%;
+    position: relative;
+}
+
+.Paper6{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 200px;
+    background-color: grey;
+    flex-grow: 0.2;
+}
+
+#p6{
+    height: 100%;
+    position: relative;
+}
+
+.nav-bar {
+  display: block;
+  overflow: hidden;
+  background-color: rgb(139, 206, 228);
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  
+}
+
+
+.nav-link a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 5px 5px;
+}
+
+#news{
+    display: relative;
+    left: 0;
+}
+#cart{
+    position: absolute;
+    right: 14px;
+    top: 93px;
+}
