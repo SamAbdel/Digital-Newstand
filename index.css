@@ -37,6 +37,13 @@ p{
     flex-wrap: wrap;
 }
 
+#addtocart{
+    position:absolute;
+    right: 0;
+    display:block;
+    bottom: 0px;
+}
+
 body{
     background-color: rgb(231, 209, 180);
     
