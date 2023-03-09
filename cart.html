@@ -14,8 +14,8 @@
           </header>
           <nav class="nav-bar">
             <div class="nav-link">
-                <a href="test.html"><img id="news" src= "rsc/news.jpg" height = 40px width = 40px alt = "News"></a>
-                <a href="idea.html"><img id="cart" src= "rsc/cart.jpg" height = 40px width = 40px alt = "News"></a>
+                <a href="index.html"><img id="news" src= "rsc/news.jpg" height = 40px width = 40px alt = "News"></a>
+                <a href="cart.html"><img id="cart" src= "rsc/cart.jpg" height = 40px width = 40px alt = "News"></a>
             </div>
 
             </nav>
@@ -29,9 +29,20 @@
                     <th scope="col"> Price</th>
                 </tr>
                 <tr>
-                    <td><img id="NYTimes", src="rsc/NYTimes.png" height="200"; width ="200"></img></td>
-                    <td>2</td>
-                    <td>$9.99</td>
+                   <td><p>NY Times</p><img id="NYTimes", src="rsc/NYTimes.png" height="200"; width ="200"></img> </td>
+                    <td><section class="container">
+                        
+                        <input type="number" id="n" value="0" step="1" />
+
+
+                        <script type="text/javascript">
+                             $(":input").bind('keyup mouseup', function () {
+                             var total = document.getElementById("n").value * 9.99;      
+                             document.getElementById('total').innerHTML = total;     });
+                      </script>                      
+                        </div>
+                      </section></td>
+                    <td>$<span id="total"></span></td>
                 </tr>
                 <tbody></tbody>
             </table>
