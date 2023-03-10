@@ -10,8 +10,8 @@
     href="cart.css" media="screen and
     (min-width:1000px)"/>
     <title> My Cart </title>
-  </head>
-  <body>
+
+
       <header>
          
           <h1> My Cart</h1>
@@ -23,33 +23,35 @@
             </div>
 
             </nav>
-      </body>
+
       <div class="main-container">
-        <table class = "shopping-cart">
+        <table id = "shopping-cart">
             <table>
-                <tr>
+                <thead>
                     <th scope="col"> Magazine</th>
-                    <th scope="col"> Quantity</th>
+                    <th scope="col"> Name</th>
                     <th scope="col"> Price</th>
-                </tr>
-                <tr>
-                   <td><p>NY Times</p><img id="NYTimes", src="rsc/NYTimes.png" height="200"; width ="200"></img> </td>
-                    <td><section class="container">
-                        
-                        <input type="number" id="n" value="0" step="1" />
-
-
-                        <script type="text/javascript">
-                             $(":input").bind('keyup mouseup', function () {
-                             var total = document.getElementById("n").value * 9.99;      
-                             document.getElementById('total').innerHTML = total;     });
-                      </script>                      
-                        </div>
-                      </section></td>
-                    <td>$<span id="total"></span></td>
-                </tr>
-                <tbody></tbody>
+                </thead>
+                <tbody id = "tablebody">
+                   
+                </tbody>
             </table>
             
         </div>
+        <input type="number" id="n" value="0" step="1" />
+
+        <script type="text/javascript">//<![CDATA[
+
+
+            $(":input").bind('keyup mouseup', function () {
+                var total = document.getElementById("n").value * 9.99;      
+                document.getElementById('total').innerHTML = total;     
+});
+
+</script>        
     </div>
+    <script
+    type="text/javascript"
+    src="cart.js"></script>
+</body>
+</head>
