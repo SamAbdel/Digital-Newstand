@@ -6,7 +6,7 @@ class paper{
     }
 }
 var Papers = []
-
+var counter = 0
 function check(paper){
     return paper.nme == this.nme
 }
