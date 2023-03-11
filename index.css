@@ -178,3 +178,34 @@ h2{
     right: 14px;
     top: 93px;
 }
+input{
+    position: absolute;
+    font-size: 15px;
+    background-color: red;
+    border: none;
+    width:10px;
+    top: 15%;
+    font-weight: bold;
+    right: 30%;
+}
+.circle{
+    position: absolute;
+ 
+    border-radius: 50%;
+    width: 12px;
+    right: 0;
+    top: 10%;
+    height: 12px;
+    padding: 10px;
+    background: #fff;
+    border: 3px solid #000;
+    color: #000;
+    background-color: red;
+    text-align:center;
+    font: 12px Arial, sans-serif;
+}
+button{
+    border:none;
+    background: none;
+
+}
