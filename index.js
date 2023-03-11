@@ -81,6 +81,8 @@ function addp6(){
 }
 
 function store(){
+    counter++
+    document.getElementById('counter').value = counter;
     sessionStorage.setItem('papers', JSON.stringify(Papers))
 }
 
