@@ -3,13 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <body onload="start()">
+
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css"
     href="index.css" media="screen and
     (min-width:1000px)"/>
     <title> Digital Newstand </title>
-
-  <body>
+  
       <header>
          
           <h1> Digital Newstand </h1>
@@ -17,13 +18,14 @@
           <nav class="nav-bar">
             <div class="nav-link">
                 <a href="index.html"><img id="news" src= "rsc/news.jpg" height = 40px width = 40px alt = "News"></a>
+                
                 <a href="cart.html"><img id="cart" src= "rsc/cart.jpg" height = 40px width = 40px alt = "Cart"></a>
-              <div class ="circle"><input type="text" id="counter" value="0"/></div>
+                <div class ="circle"><input type="text" id="counter" value="0"/></div>
             </div>
 
             </nav>
-     
       <div class="main-container">
+    
 
 <div class="ForYou">
  
@@ -31,7 +33,7 @@
         <h2>Popular Newspapers</h2>
     </div>
 
-  <div class = "paperrow">
+    <div class = "paperrow">
         <div class ="Paper1">
             <a href="https://www.usatoday.com"><img id="p1" src= "rsc/Paper1.png" height = "200" width = 100% alt = ""></a></img>
             <button type = "button" onclick="addp1()">
@@ -61,30 +63,30 @@
         <h2>Others You Might Like</h2>
     </div>
         <div class = "paperrow">
-    <div class ="Paper4">
-        <a href="https://enewspaper.latimes.com/desktop/latimes/default.aspx?pubid=50435180-e58e-48b5-8e0c-236bf740270e"><img id="p4" src= "rsc/LA.jpg" height = "200" width = 100% alt = "LA"></a>
-        <button type = "button" onclick="Javascript:addp4()">
-        <img id="addtocart" src = "rsc/cart.jpg" height="50" width="50" alt="cart"></img>
-        </button>
-    </div>
-    <div class ="Paper5"> 
-        <a href = "https://www.wsj.com/print-edition/20230308/frontpage"><img id="p5" src= "rsc/WSJ.jpg" height = "200" width = 100% alt = "WSJ"></a>
-        <button type = "button" onclick="Javascript:addp5()">
-        <img id="addtocart" src = "rsc/cart.jpg" height="50" width="50" alt="cart"></img>
-        </button>
-    </div>
-    <div class ="Paper6">
-        <a href="https://www.chicagotribune.com/bal-frontpagegraphic-graphic.html"></a><img id="p6" src= "rsc/CHI.png" height = "200" width = 100% alt = "CHI">
-        <button type = "button" onclick="Javascript:addp6()">
-        <img id="addtocart" src = "rsc/cart.jpg" height="50" width="50" alt="cart"></img>
-        </button>
-    </div>
+            <div class ="Paper4">
+                <a href="https://enewspaper.latimes.com/desktop/latimes/default.aspx?pubid=50435180-e58e-48b5-8e0c-236bf740270e"><img id="p4" src= "rsc/LA.jpg" height = "200" width = 100% alt = "LA"></a>
+                <button type = "button" onclick="Javascript:addp4()">
+                <img id="addtocart" src = "rsc/cart.jpg" height="50" width="50" alt="cart"></img>
+            </button>
+            </div>
+            <div class ="Paper5"> 
+                <a href = "https://www.wsj.com/print-edition/20230308/frontpage"><img id="p5" src= "rsc/WSJ.jpg" height = "200" width = 100% alt = "WSJ"></a>
+                <button type = "button" onclick="Javascript:addp5()">
+                <img id="addtocart" src = "rsc/cart.jpg" height="50" width="50" alt="cart"></img>
+                </button>
+            </div>
+            <div class ="Paper6">
+                <a href="https://www.chicagotribune.com/bal-frontpagegraphic-graphic.html"></a><img id="p6" src= "rsc/CHI.png" height = "200" width = 100% alt = "CHI">
+                <button type = "button" onclick="addp6()">
+                <img id="addtocart" src = "rsc/cart.jpg" height="50" width="50" alt="cart"></img>
+                </button>
+            </div>
+        </div>
 </div>
-</div>
-</body>
+
+
 <script
     type="text/javascript"
     src="./index.js"></script>
 </head>
-
-      
+</body>
