@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+  
+  
+  
+  
+
   <head>
     <script
     type="text/javascript"
@@ -10,8 +15,7 @@
     href="cart.css" media="screen and
     (min-width:1000px)"/>
     <title> My Cart </title>
-
-<body onload="JavaScript:maketable()">
+  <body onload="JavaScript:maketable()">
       <header>
          
           <h1> My Cart</h1>
@@ -23,10 +27,11 @@
             </div>
 
             </nav>
-
+     
       <div class="main-container">
+        <div class="tbl">
         <table id = "shopping-cart">
-            <table>
+            <tbody>
                 <thead>
                     <th scope="col"> Magazine</th>
                     <th scope="col"> Name</th>
@@ -36,18 +41,43 @@
                    
                 </tbody>
             </table>
-            
         </div>
-        <input type="number" id="n" value="0" step="1" />
+        <div class = "checkout">
+            <h2>Checkout</h2>
+            <div class="card">
+                <form id ="cpn">
+                <label class="input">
+                  <input id="coupon" class="input__field" type="text" placeholder="Enter Coupon Code Here" />
+                </label>
+                <div class="button-group">
+                  <button>Send</button>
+                  <button type="reset" onclick="Javascript:Reset()">Reset</button>
+                </form>
+                  <script>
+                    function Reset() {
+                      document.getElementById("cpn").reset();
+                    }
+                    </script>
+                </div>
+              </div>
+              
+               
+            <div class = "price">
+                <p>Subtotal: <input type ="text" id="subtotal" readonly>
+                <p>Taxes: <input type ="text" id="tax" readonly>
+                <p>Shipping: <input type ="text" id="ship" readonly>
+                <p>Total: <input type ="text" id="total" readonly>
+               
+                </p>
+                <button id="checkout"> CHECKOUT </button>
+            </div>
+        </div>
+    </div>
+       
 
-        <script type="text/javascript">//<![CDATA[
 
 
-            $(":input").bind('keyup mouseup', function () {
-                var total = document.getElementById("n").value * 9.99;      
-                document.getElementById('total').innerHTML = total;     
-});
-
+        
 </script>        
     </div>
     <script
