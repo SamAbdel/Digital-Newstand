@@ -1,58 +1,76 @@
 p{
     text-align: center;
-    
+    font-size: 20px;
 }
 
-.ForYou{
-    outline: 5px black;
-    border-style:solid;
-    background-color: white;
-    display: flex;
-    flex-wrap:wrap;
-    width: 100%;
-    justify-content: space-evenly;
+.taxes{
+    text-align:left;
+    font-size: 20px;
+
 }
 
-.Popular{
-    outline: 5px black;
-    border-style:solid;
-    padding-top: 10px;
-    padding-left: 20px;
-    background-color: white;
-    display: flex;
-    flex-wrap:wrap;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.main-container{
-    
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: white;
-    display: flex;
-    width:80%;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    box-shadow: 0px 25px 40px;
-}
-table,th,td{
-    border: 2px black;
-    border-spacing: 30px;
-}
-body{
-    background-color: rgb(231, 209, 180);
-    
-}
-
-h1{
-    text-align: center;
-    font-size: 34px;
+#coupon{
+    position: relative;
+    vertical-align: left;
+    width: 500px;
 }
 
 h2{
     text-align: center;
-    font-size: 24px;
+    vertical-align: middle;
+}
+#checkout{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    left: 100px;
+    background-color: yellow;
+}
+
+
+.main-container{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    
+    width:95%;
+    border-radius: 20px;
+    
+}
+
+input{
+    border: white;
+    font-size: 20px;
+    text-indent: 150px;
+
+}
+.checkout{
+    outline:5px black;
+    border-style:solid;
+    flex: 1;
+    height: 600px;
+    
+}
+
+.price{
+    padding-top: 50px;
+}
+
+table{
+    border: 2px black;
+    border-spacing: 20px;
+   
+}
+.tbl{
+    flex: 0.2;
+}
+td{
+    vertical-align: middle;
+}
+body{
+    background-color: rgb(231, 209, 180);
+    
 }
 
 
@@ -85,3 +103,4 @@ h2{
     right: 14px;
     top: 93px;
 }
+
