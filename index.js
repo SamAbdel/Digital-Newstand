@@ -7,15 +7,21 @@ class paper{
 }
 var Papers = []
 var counter = 0
+function start(){
+    let papers = JSON.parse(sessionStorage.getItem('papers'))
+    let counter = JSON.parse(sessionStorage.getItem('counter'))
+}
 function check(paper){
     return paper.nme == this.nme
 }
+
 function addp1(){
    
-    let USAToday = new paper("rsc/Paper1.png", "USA Today", "4.99")
+    let USAToday = new paper("rsc/Paper1.png", "USA Today", "5.00")
     if(!Papers.some(check, USAToday)){
         Papers.push(USAToday) 
         alert('USA Today has been added to your cart')
+      
         store() 
     } 
     else{
@@ -24,10 +30,11 @@ function addp1(){
     
 }
 function addp2(){
-    let NYTimes = new paper("rsc/NYTimes.png", "NY Times", "3.99")
+    let NYTimes = new paper("rsc/NYTimes.png", "NY Times", "4.00")
     if(!Papers.some(check, NYTimes)){
         Papers.push(NYTimes) 
         alert('NY Times has been added to your cart')
+      
         store() 
     } 
     else{
@@ -35,10 +42,11 @@ function addp2(){
     }
 }
 function addp3(){
-    let SFChronicle = new paper("rsc/SF.png", "SF Chronicle", "2.99")
+    let SFChronicle = new paper("rsc/SF.png", "SF Chronicle", "3.00")
     if(!Papers.some(check, SFChronicle)){
         Papers.push(SFChronicle) 
         alert('SF Chronicle has been added to your cart')
+      
         store() 
     } 
     else{
@@ -46,10 +54,11 @@ function addp3(){
     }
 }
 function addp4(){
-    let LATimes = new paper("rsc/LA.jpg", "LA Times", "5.99")
+    let LATimes = new paper("rsc/LA.jpg", "LA Times", "6.00")
     if(!Papers.some(check, LATimes)){
         Papers.push(LATimes) 
         alert('LA Times has been added to your cart')
+    
         store() 
     } 
     else{
@@ -57,10 +66,11 @@ function addp4(){
     }
 }
 function addp5(){
-    let WSJ = new paper("rsc/WSJ.jpg", "Wall Street Journal", "6.99")
+    let WSJ = new paper("rsc/WSJ.jpg", "Wall Street Journal", "7.00")
     if(!Papers.some(check, WSJ)){
         Papers.push(WSJ) 
         alert('Wall Street Journal has been added to your cart')
+   
         store() 
     } 
     else{
@@ -68,10 +78,11 @@ function addp5(){
     }
 }
 function addp6(){
-    let CHI = new paper("rsc/CHI.png", "Chicago Tribune", "3.99")
+    let CHI = new paper("rsc/CHI.png", "Chicago Tribune", "4.00")
     if(!Papers.some(check, CHI)){
         Papers.push(CHI) 
         alert('Chicago Tribune has been added to your cart')
+    
         store() 
     } 
     else{
@@ -84,5 +95,6 @@ function store(){
     counter++
     document.getElementById('counter').value = counter;
     sessionStorage.setItem('papers', JSON.stringify(Papers))
+    sessionStorage.setItem('counter', JSON.stringify(counter))
 }
 
