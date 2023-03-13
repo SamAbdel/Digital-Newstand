@@ -43,7 +43,9 @@ p{
     display:block;
     bottom: 0px;
 }
-
+img:hover{
+    filter: brightness(50%);
+}
 body{
     background-color: rgb(231, 209, 180);
     
